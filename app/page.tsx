@@ -6,7 +6,7 @@ export default function Home() {
           {/* QR Code */}
           <div className="w-24 h-24 border border-gray-700 p-0.5">
             <img
-              src="/file.svg" 
+              src="qrcode.jpeg" 
               alt="Blank Image"
               className="w-full h-full"
             />
