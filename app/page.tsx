@@ -55,7 +55,7 @@ export default function Home() {
               </tr>
               <tr className="border-b border-gray-700">
                 <td className="border-r border-gray-700 p-1.5">Address</td>
-                <td className="p-1.5 leading-tight">7/826 VADASHERY(H), KALLARAKKAL PARAMBU, NEAR ELLIKKAL TEMPLE,MATTANCHERRY, ERNAKULAM, KERALA – 682002</td>
+                <td className="p-1.5 leading-tight">VADASHREY 7/826 MATTANCHEERY ERNAKULAM</td>
               </tr>
               <tr className="border-b border-gray-700">
                 <td className="border-r border-gray-700 p-1.5">Religion</td>
