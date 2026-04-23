@@ -1,65 +1,121 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen bg-gray-100 flex justify-center items-start py-8">
+      <div className="bg-white p-6 w-[800px] shadow-md border border-gray-300">
+        <div className="flex justify-between items-start mb-4">
+          {/* QR Code */}
+          <div className="w-24 h-24 border border-gray-700 p-0.5">
+            <img
+              src="/file.svg" 
+              alt="Blank Image"
+              className="w-full h-full"
+            />
+          </div>
+
+          {/* Header Text */}
+          <div className="text-center flex-grow mr-24">
+            <p className="text-[15px] font-sans  text-red-900 tracking-wide">
+              CERTIFICATE VERIFICATION REPORT
+            </p>
+            <p className="text-[13px] font-sans mt-1">
+              Generated On 30/01/2026 12.17 AM
+            </p>
+           <p className="text-[16px] font-sans font-bold text-red-700 mt-2 inline-block border-b-2 border-red-300">
+  CASTE CERTIFICATE
+</p>
+          </div>
+        </div>
+
+        {/* Certificate Details Line */}
+        <div className="mb-4">
+          <p className="text-[13px] font-sans">
+            Details of the Certificate no. 100098265 Issued on 2026-01-31
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Details Table */}
+        <div className="mb-6">
+          <table className="w-full border-collapse border border-gray-700 text-[13px] font-sans">
+            <tbody>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5 w-[45%]">Name of Person to whom certificate is</td>
+                <td className="p-1.5 font-medium">AlBIN</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Gender</td>
+                <td className="p-1.5">Male</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Age</td>
+                <td className="p-1.5">21</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Name of Father</td>
+                <td className="p-1.5 font-medium">UMAR HUSSAIN</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Address</td>
+                <td className="p-1.5 leading-tight">7/826 VADASHERY(H), KALLARAKKAL PARAMBU, NEAR ELLIKKAL TEMPLE,MATTANCHERRY, ERNAKULAM, KERALA – 682002</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Religion</td>
+                <td className="p-1.5">Christian</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Caste</td>
+                <td className="p-1.5">OBC Christian</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Post Office with Pin code</td>
+                <td className="p-1.5">MATTANCHERRY, 682002</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Name of Local body</td>
+                <td className="p-1.5">Mattancherry</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Village</td>
+                <td className="p-1.5">Mattancherry</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Taluk</td>
+                <td className="p-1.5">Kochi Taluk</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">District</td>
+                <td className="p-1.5">Ernakulam </td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Date of Issue of Certificate</td>
+                <td className="p-1.5">31/01/2026</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Designation of the issuing officer</td>
+                <td className="p-1.5">VILLAGE OFFICER</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Name of the issuing officer</td>
+                <td className="p-1.5">Baiju K G</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="border-r border-gray-700 p-1.5">Name of Office</td>
+                <td className="p-1.5">LOKAMALESWARAM VILLAGE OFFICE</td>
+              </tr>
+              <tr>
+                <td className="border-r border-gray-700 p-1.5">Remarks</td>
+                <td className="p-1.5">Nil</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </main>
+
+        {/* Footer Text */}
+        <div>
+          <p className="text-[13px] font-sans">
+            This certificate is valid only for a period of three years from the date of issue
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
