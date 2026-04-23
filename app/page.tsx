@@ -47,11 +47,11 @@ export default function Home() {
               </tr>
               <tr className="border-b border-gray-700">
                 <td className="border-r border-gray-700 p-1.5">Age</td>
-                <td className="p-1.5">21</td>
+                <td className="p-1.5">22</td>
               </tr>
               <tr className="border-b border-gray-700">
                 <td className="border-r border-gray-700 p-1.5">Name of Father</td>
-                <td className="p-1.5 font-medium">UMAR HUSSAIN</td>
+                <td className="p-1.5 font-medium">JOSEPH SUNIL</td>
               </tr>
               <tr className="border-b border-gray-700">
                 <td className="border-r border-gray-700 p-1.5">Address</td>
@@ -99,7 +99,7 @@ export default function Home() {
               </tr>
               <tr className="border-b border-gray-700">
                 <td className="border-r border-gray-700 p-1.5">Name of Office</td>
-                <td className="p-1.5">LOKAMALESWARAM VILLAGE OFFICE</td>
+                <td className="p-1.5">MATTANCHERRY VILLAGE OFFICE</td>
               </tr>
               <tr>
                 <td className="border-r border-gray-700 p-1.5">Remarks</td>
